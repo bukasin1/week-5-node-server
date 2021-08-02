@@ -64,11 +64,12 @@ const server: Server = http.createServer(
         //   try{
         //     if(err){
         //       res.end(`${url} is not a valid url`)
+        //       return;
         //     }
         //     if (!err && res1.statusCode == 200) {
         //       const webData = cheerio.load(html)
-        //       fs.writeFileSync('./index.html', html)
         //       const pageTitle = webData('title').text()
+        //       fs.writeFileSync(`./htmlFiles/${pageTitle}-index.html`, html)
         //       const description = webData('meta[name = "description"]').attr('content') || 'No page description'
         //       const writeStream = fs.createWriteStream(`./results/${pageTitle}-result.csv`)
         //       writeStream.write(`Title: ${pageTitle} \nDescription: ${description} \n`)
