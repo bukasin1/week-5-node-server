@@ -28,8 +28,8 @@ const server: Server = http.createServer(
         axios.get(url)
           .then((resp: any) => {
             const webData = cheerio.load(resp.data)
-            fs.writeFileSync('./index.html', resp.data)
             const pageTitle = webData('title').text()
+            fs.writeFileSync(`./htmlFiles/${pageTitle}-index.html`, resp.data)
             const description = webData('meta[name = "description"]').attr('content') || 'No page description'
             const writeStream = fs.createWriteStream(`./results/${pageTitle}-result.csv`)
             writeStream.write(`Title: ${pageTitle} \nDescription: ${description} \n`)
@@ -56,6 +56,7 @@ const server: Server = http.createServer(
             console.log('Scraping Done...');
           })
           .catch((err: any) => {
+            console.log(err)
             res.end(`${url} is probably not complete or not valid, check again`)
           })
 
