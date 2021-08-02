@@ -1,0 +1,43 @@
+[
+    {
+        "id": 1,
+        "createdAt": "2021-08-02T20:37:09.820Z",
+        "updatedAt": "2021-08-02T20:42:17.559Z",
+        "organization": "naija ninja1",
+        "products": [
+            "sweets",
+            "pies",
+            "meats",
+            "Potatoes"
+        ],
+        "marketValue": "80%",
+        "address": "ilesha",
+        "ceo": "db",
+        "country": "Nigeria",
+        "noOfEmployees": 4,
+        "employees": [
+            "sophiat ruka",
+            "Bolaji samson",
+            "Emma goodness",
+            "Sunday Enahoro"
+        ]
+    },
+    {
+        "id": 2,
+        "createdAt": "2021-08-02T20:49:55.300Z",
+        "organization": "net ninja",
+        "products": [
+            "sweet",
+            "apis"
+        ],
+        "marketValue": "90%",
+        "address": "sangotedo",
+        "ceo": "ck",
+        "country": "Nigeria",
+        "noOfEmployees": 2,
+        "employees": [
+            "kayode odole",
+            "Joseph Omotosho"
+        ]
+    }
+]
